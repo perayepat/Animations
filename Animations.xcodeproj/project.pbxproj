@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		434CD5E6297C72A500618330 /* SunAndMoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434CD5E5297C72A500618330 /* SunAndMoon.swift */; };
+		434CD5EB297C7DD700618330 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434CD5EA297C7DD700618330 /* ShimmerEffect.swift */; };
 		4375CC3929166F3800B317BD /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC3829166F3800B317BD /* AnimationsApp.swift */; };
 		4375CC3B29166F3800B317BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC3A29166F3800B317BD /* ContentView.swift */; };
 		4375CC3D29166F3A00B317BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4375CC3C29166F3A00B317BD /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		434CD5E5297C72A500618330 /* SunAndMoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunAndMoon.swift; sourceTree = "<group>"; };
+		434CD5EA297C7DD700618330 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		4375CC3529166F3800B317BD /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4375CC3829166F3800B317BD /* AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsApp.swift; sourceTree = "<group>"; };
 		4375CC3A29166F3800B317BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		434CD5E7297C7D9B00618330 /* Core Animation */ = {
+			isa = PBXGroup;
+			children = (
+				434CD5EA297C7DD700618330 /* ShimmerEffect.swift */,
+			);
+			path = "Core Animation";
+			sourceTree = "<group>";
+		};
 		4375CC2C29166F3800B317BD = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		4375CC3729166F3800B317BD /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				434CD5E7297C7D9B00618330 /* Core Animation */,
 				4375CC5A2916A5AF00B317BD /* Smart Home */,
 				4375CC5529168A0F00B317BD /* How Things Move */,
 				4375CC542916899700B317BD /* Basics */,
@@ -202,6 +213,7 @@
 				4375CC49291674BF00B317BD /* HamburgerToBack.swift in Sources */,
 				4375CC4D291678A300B317BD /* DanglingLight.swift in Sources */,
 				4375CC3B29166F3800B317BD /* ContentView.swift in Sources */,
+				434CD5EB297C7DD700618330 /* ShimmerEffect.swift in Sources */,
 				4375CC592916A0C700B317BD /* TabBarLight.swift in Sources */,
 				4375CC4B2916767800B317BD /* HamburgerToClose.swift in Sources */,
 				4375CC5C2916AD1900B317BD /* SmartHomeView.swift in Sources */,
