@@ -2,14 +2,13 @@
 import SwiftUI
 
 struct SunAndMoon: View {
-    @State private var moveAlongPath = 20
+    @State private var moveAlongPath = 0
     @State private var scaleX = 0.0
     
     var body: some View {
         
         ZStack{
-            Color.blue.hueRotation(Angle.degrees(-30))
-                .ignoresSafeArea()
+          
             
             VStack(spacing: 400) {
                 Text("Sun & Moon")
@@ -36,16 +35,25 @@ struct SunAndMoon: View {
                     .font(.title)
                     .foregroundColor(.yellow)
                     .offset(x: -150)
+                    .rotationEffect(.degrees(Double(moveAlongPath)))
+                //MARK: - Roatiting the sun
+                    .animation(.easeInOut(duration: 5).delay(2).repeatForever(autoreverses: false), value: moveAlongPath)
+                    .onAppear {
+                        moveAlongPath = 180
+                    }
                 
-                    
                 ZStack{
                     Rectangle()
                         .frame(width: 400, height: 150)
                         .foregroundColor(.yellow)
                         .opacity(0.1)
-                        .scaleEffect(x: CGFloat(scaleX), anchor: .leading)
+                        .scaleEffect(x:CGFloat(scaleX),anchor: .leading)
+                        .offset(y: -75)
+                        .animation(.easeInOut(duration: 5).delay(2).repeatForever(autoreverses: false), value: scaleX)
+                        .onAppear {
+                            scaleX = 1
+                        }
                     
-                        
                 }
                 .frame(width: 300, height: 300)
                 .clipShape(Circle())
@@ -66,6 +74,8 @@ struct SunAndMoon: View {
                     .offset(x: 150)
             }
         }
+        .offset(y:100)
+        .preferredColorScheme(.dark)
     }
 }
 
