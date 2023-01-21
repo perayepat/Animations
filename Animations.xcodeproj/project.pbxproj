@@ -11,6 +11,16 @@
 		4375CC3B29166F3800B317BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC3A29166F3800B317BD /* ContentView.swift */; };
 		4375CC3D29166F3A00B317BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4375CC3C29166F3A00B317BD /* Assets.xcassets */; };
 		4375CC4029166F3A00B317BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4375CC3F29166F3A00B317BD /* Preview Assets.xcassets */; };
+		4375CC472916747400B317BD /* BellAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC462916747400B317BD /* BellAnimation.swift */; };
+		4375CC49291674BF00B317BD /* HamburgerToBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC48291674BF00B317BD /* HamburgerToBack.swift */; };
+		4375CC4B2916767800B317BD /* HamburgerToClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC4A2916767800B317BD /* HamburgerToClose.swift */; };
+		4375CC4D291678A300B317BD /* DanglingLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC4C291678A300B317BD /* DanglingLight.swift */; };
+		4375CC4F29167DCB00B317BD /* ExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC4E29167DCB00B317BD /* ExpandedView.swift */; };
+		4375CC512916842E00B317BD /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC502916842E00B317BD /* CountDownTimer.swift */; };
+		4375CC532916880E00B317BD /* CountUpTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC522916880E00B317BD /* CountUpTimer.swift */; };
+		4375CC5729168A4600B317BD /* AnimatingAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC5629168A4600B317BD /* AnimatingAlignment.swift */; };
+		4375CC592916A0C700B317BD /* TabBarLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC582916A0C700B317BD /* TabBarLight.swift */; };
+		4375CC5C2916AD1900B317BD /* SmartHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC5B2916AD1900B317BD /* SmartHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		4375CC3A29166F3800B317BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4375CC3C29166F3A00B317BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4375CC3F29166F3A00B317BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4375CC462916747400B317BD /* BellAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellAnimation.swift; sourceTree = "<group>"; };
+		4375CC48291674BF00B317BD /* HamburgerToBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerToBack.swift; sourceTree = "<group>"; };
+		4375CC4A2916767800B317BD /* HamburgerToClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerToClose.swift; sourceTree = "<group>"; };
+		4375CC4C291678A300B317BD /* DanglingLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanglingLight.swift; sourceTree = "<group>"; };
+		4375CC4E29167DCB00B317BD /* ExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedView.swift; sourceTree = "<group>"; };
+		4375CC502916842E00B317BD /* CountDownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
+		4375CC522916880E00B317BD /* CountUpTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountUpTimer.swift; sourceTree = "<group>"; };
+		4375CC5629168A4600B317BD /* AnimatingAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingAlignment.swift; sourceTree = "<group>"; };
+		4375CC582916A0C700B317BD /* TabBarLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLight.swift; sourceTree = "<group>"; };
+		4375CC5B2916AD1900B317BD /* SmartHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +71,11 @@
 		4375CC3729166F3800B317BD /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				4375CC5A2916A5AF00B317BD /* Smart Home */,
+				4375CC5529168A0F00B317BD /* How Things Move */,
 				4375CC3829166F3800B317BD /* AnimationsApp.swift */,
+				4375CC4C291678A300B317BD /* DanglingLight.swift */,
+				4375CC542916899700B317BD /* Basics */,
 				4375CC3A29166F3800B317BD /* ContentView.swift */,
 				4375CC3C29166F3A00B317BD /* Assets.xcassets */,
 				4375CC3E29166F3A00B317BD /* Preview Content */,
@@ -65,6 +89,36 @@
 				4375CC3F29166F3A00B317BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4375CC542916899700B317BD /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				4375CC4E29167DCB00B317BD /* ExpandedView.swift */,
+				4375CC522916880E00B317BD /* CountUpTimer.swift */,
+				4375CC462916747400B317BD /* BellAnimation.swift */,
+				4375CC4A2916767800B317BD /* HamburgerToClose.swift */,
+				4375CC48291674BF00B317BD /* HamburgerToBack.swift */,
+				4375CC502916842E00B317BD /* CountDownTimer.swift */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		4375CC5529168A0F00B317BD /* How Things Move */ = {
+			isa = PBXGroup;
+			children = (
+				4375CC5629168A4600B317BD /* AnimatingAlignment.swift */,
+			);
+			path = "How Things Move";
+			sourceTree = "<group>";
+		};
+		4375CC5A2916A5AF00B317BD /* Smart Home */ = {
+			isa = PBXGroup;
+			children = (
+				4375CC582916A0C700B317BD /* TabBarLight.swift */,
+				4375CC5B2916AD1900B317BD /* SmartHomeView.swift */,
+			);
+			path = "Smart Home";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +191,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4375CC532916880E00B317BD /* CountUpTimer.swift in Sources */,
+				4375CC4F29167DCB00B317BD /* ExpandedView.swift in Sources */,
+				4375CC512916842E00B317BD /* CountDownTimer.swift in Sources */,
+				4375CC472916747400B317BD /* BellAnimation.swift in Sources */,
+				4375CC49291674BF00B317BD /* HamburgerToBack.swift in Sources */,
+				4375CC4D291678A300B317BD /* DanglingLight.swift in Sources */,
 				4375CC3B29166F3800B317BD /* ContentView.swift in Sources */,
+				4375CC592916A0C700B317BD /* TabBarLight.swift in Sources */,
+				4375CC4B2916767800B317BD /* HamburgerToClose.swift in Sources */,
+				4375CC5C2916AD1900B317BD /* SmartHomeView.swift in Sources */,
+				4375CC5729168A4600B317BD /* AnimatingAlignment.swift in Sources */,
 				4375CC3929166F3800B317BD /* AnimationsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
