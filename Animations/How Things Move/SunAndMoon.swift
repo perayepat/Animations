@@ -8,7 +8,7 @@ struct SunAndMoon: View {
     var body: some View {
         
         ZStack{
-            Color.blue.hueRotation(Angle.degrees(20))
+            Color.blue.hueRotation(Angle.degrees(-30))
                 .ignoresSafeArea()
             
             VStack(spacing: 400) {
@@ -36,11 +36,7 @@ struct SunAndMoon: View {
                     .font(.title)
                     .foregroundColor(.yellow)
                     .offset(x: -150)
-                    .rotationEffect(.degrees(Double(moveAlongPath)))
-                    .animation(Animation.easeInOut(duration: 5).delay(2).repeatForever(autoreverses: false), value: moveAlongPath)
-                    .onAppear{
-                        moveAlongPath = 145
-                    }
+                
                     
                 ZStack{
                     Rectangle()
@@ -48,11 +44,7 @@ struct SunAndMoon: View {
                         .foregroundColor(.yellow)
                         .opacity(0.1)
                         .scaleEffect(x: CGFloat(scaleX), anchor: .leading)
-                        .offset(y:-75)
-                        .animation(Animation.easeInOut(duration: 5).delay(2).repeatForever(autoreverses: false), value: scaleX)
-                        .onAppear{
-                            scaleX = 0.8
-                        }
+                    
                         
                 }
                 .frame(width: 300, height: 300)
