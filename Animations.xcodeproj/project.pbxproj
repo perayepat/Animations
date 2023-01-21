@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		434CD5E6297C72A500618330 /* SunAndMoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434CD5E5297C72A500618330 /* SunAndMoon.swift */; };
 		4375CC3929166F3800B317BD /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC3829166F3800B317BD /* AnimationsApp.swift */; };
 		4375CC3B29166F3800B317BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC3A29166F3800B317BD /* ContentView.swift */; };
 		4375CC3D29166F3A00B317BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4375CC3C29166F3A00B317BD /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		434CD5E5297C72A500618330 /* SunAndMoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunAndMoon.swift; sourceTree = "<group>"; };
 		4375CC3529166F3800B317BD /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4375CC3829166F3800B317BD /* AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsApp.swift; sourceTree = "<group>"; };
 		4375CC3A29166F3800B317BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,9 +75,9 @@
 			children = (
 				4375CC5A2916A5AF00B317BD /* Smart Home */,
 				4375CC5529168A0F00B317BD /* How Things Move */,
+				4375CC542916899700B317BD /* Basics */,
 				4375CC3829166F3800B317BD /* AnimationsApp.swift */,
 				4375CC4C291678A300B317BD /* DanglingLight.swift */,
-				4375CC542916899700B317BD /* Basics */,
 				4375CC3A29166F3800B317BD /* ContentView.swift */,
 				4375CC3C29166F3A00B317BD /* Assets.xcassets */,
 				4375CC3E29166F3A00B317BD /* Preview Content */,
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				4375CC5629168A4600B317BD /* AnimatingAlignment.swift */,
+				434CD5E5297C72A500618330 /* SunAndMoon.swift */,
 			);
 			path = "How Things Move";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				4375CC4F29167DCB00B317BD /* ExpandedView.swift in Sources */,
 				4375CC512916842E00B317BD /* CountDownTimer.swift in Sources */,
 				4375CC472916747400B317BD /* BellAnimation.swift in Sources */,
+				434CD5E6297C72A500618330 /* SunAndMoon.swift in Sources */,
 				4375CC49291674BF00B317BD /* HamburgerToBack.swift in Sources */,
 				4375CC4D291678A300B317BD /* DanglingLight.swift in Sources */,
 				4375CC3B29166F3800B317BD /* ContentView.swift in Sources */,

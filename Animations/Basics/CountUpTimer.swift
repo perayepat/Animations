@@ -70,10 +70,7 @@ struct CountUpTimer: View {
                 counter = Text(Date().addingTimeInterval(0.0), style: .timer)
                     .font(.system(size: 64))
                     .fontWeight(.ultraLight)
-               
             }
-            
-    
         }
         .padding()
     }

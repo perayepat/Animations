@@ -1,28 +1,20 @@
-//
-//  AnimatingAlignment.swift
-//  Animations
-//
-//  Created by Pat on 2022/11/05.
-//
 
 import SwiftUI
 
 struct AnimatingAlignment: View {
     @State private var moveDashes = 100
     @State private var moveRight = false
-    
     let chainGradient = LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing)
     
     var body: some View {
+        
         VStack {
-            
-
             Spacer()
-            
-            VStack() {
+            VStack(alignment: moveRight ? .trailing : .leading){
                 Image(systemName: "gift.fill")
                     .font(.largeTitle)
-
+                    .animation(.linear(duration: 4).delay(-0.5).repeatForever(autoreverses: true), value: moveRight)
+                
                 ZStack {
                     HStack {
                         
@@ -39,12 +31,14 @@ struct AnimatingAlignment: View {
                         .frame(width: 340, height: 80, alignment: .center)
                         .mask(RoundedRectangle(cornerRadius: 40)
                             .stroke(style: StrokeStyle(lineWidth: 6, lineCap: .round, lineJoin: .round, dash: [8, 14], dashPhase: CGFloat(moveDashes)))
-                            .animation(Animation.linear(duration: 2).repeatForever(autoreverses: false).speed(0.5),value: moveDashes))
+                            .animation(Animation.linear(duration: 2).repeatForever(autoreverses: true).speed(0.5)))
                 }
-            } // All views
+            }
             .padding()
-            Spacer()
-            
+            .onAppear {
+                moveRight.toggle()
+                moveDashes = -100
+            }
         }
     }
 }
