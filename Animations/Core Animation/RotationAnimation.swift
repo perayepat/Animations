@@ -2,15 +2,15 @@ import SwiftUI
 
 struct RotationAnimation: View {
     
+    // Initial Animation States
     @State var rotation = 0.0
     @State var scaleXY = 1.0
-    
-    //inital postition
     @State var postionX = -150
+    @State var objectColor = Color.blue
     
     var body: some View {
         Rectangle()
-            .fill(.cyan)
+            .fill(objectColor)
             .frame(width: 50, height: 50)
             .rotationEffect(.degrees(rotation))
             .scaleEffect(scaleXY)
@@ -21,6 +21,7 @@ struct RotationAnimation: View {
                 rotation += 360
                 scaleXY += 1.1
                 postionX += 250
+                objectColor = Color.pink
             }
     }
 }
