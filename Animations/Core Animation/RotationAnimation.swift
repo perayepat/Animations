@@ -9,9 +9,12 @@ struct RotationAnimation: View {
     @State var objectColor = Color.blue
     // + Transperency
     @State var transperency = 0.1
+    // + Corner radius
+    @State var roundCorner = 25.0
     
+
     var body: some View {
-        Rectangle()
+        RoundedRectangle(cornerRadius: roundCorner)
             .fill(objectColor)
             .frame(width: 50, height: 50)
             .rotationEffect(.degrees(rotation))
@@ -26,6 +29,7 @@ struct RotationAnimation: View {
                 postionX += 250
                 objectColor = Color.pink
                 transperency = 1
+                roundCorner = 0
             }
     }
 }

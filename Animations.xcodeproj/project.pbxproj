@@ -11,6 +11,10 @@
 		434CD5EB297C7DD700618330 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434CD5EA297C7DD700618330 /* ShimmerEffect.swift */; };
 		434CD5ED297DBB7300618330 /* RotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434CD5EC297DBB7300618330 /* RotationAnimation.swift */; };
 		434CD5EF297E49B800618330 /* CirclePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434CD5EE297E49B800618330 /* CirclePulse.swift */; };
+		434CD5F1297E4F2F00618330 /* AnimatingStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434CD5F0297E4F2F00618330 /* AnimatingStroke.swift */; };
+		434CD5F5297E578D00618330 /* UIBezierPath+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434CD5F3297E578D00618330 /* UIBezierPath+Extension.swift */; };
+		434CD5F6297E578D00618330 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434CD5F4297E578D00618330 /* UIColor+extension.swift */; };
+		434CD5F8297E57E300618330 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434CD5F7297E57E300618330 /* ShapeView.swift */; };
 		4375CC3929166F3800B317BD /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC3829166F3800B317BD /* AnimationsApp.swift */; };
 		4375CC3B29166F3800B317BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375CC3A29166F3800B317BD /* ContentView.swift */; };
 		4375CC3D29166F3A00B317BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4375CC3C29166F3A00B317BD /* Assets.xcassets */; };
@@ -32,6 +36,10 @@
 		434CD5EA297C7DD700618330 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		434CD5EC297DBB7300618330 /* RotationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationAnimation.swift; sourceTree = "<group>"; };
 		434CD5EE297E49B800618330 /* CirclePulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePulse.swift; sourceTree = "<group>"; };
+		434CD5F0297E4F2F00618330 /* AnimatingStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingStroke.swift; sourceTree = "<group>"; };
+		434CD5F3297E578D00618330 /* UIBezierPath+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Extension.swift"; sourceTree = "<group>"; };
+		434CD5F4297E578D00618330 /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		434CD5F7297E57E300618330 /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		4375CC3529166F3800B317BD /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4375CC3829166F3800B317BD /* AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsApp.swift; sourceTree = "<group>"; };
 		4375CC3A29166F3800B317BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,8 +74,20 @@
 				434CD5EA297C7DD700618330 /* ShimmerEffect.swift */,
 				434CD5EC297DBB7300618330 /* RotationAnimation.swift */,
 				434CD5EE297E49B800618330 /* CirclePulse.swift */,
+				434CD5F2297E577600618330 /* SVG to SWift */,
 			);
 			path = "Core Animation";
+			sourceTree = "<group>";
+		};
+		434CD5F2297E577600618330 /* SVG to SWift */ = {
+			isa = PBXGroup;
+			children = (
+				434CD5F3297E578D00618330 /* UIBezierPath+Extension.swift */,
+				434CD5F4297E578D00618330 /* UIColor+extension.swift */,
+				434CD5F0297E4F2F00618330 /* AnimatingStroke.swift */,
+				434CD5F7297E57E300618330 /* ShapeView.swift */,
+			);
+			path = "SVG to SWift";
 			sourceTree = "<group>";
 		};
 		4375CC2C29166F3800B317BD = {
@@ -214,11 +234,14 @@
 				4375CC532916880E00B317BD /* CountUpTimer.swift in Sources */,
 				4375CC4F29167DCB00B317BD /* ExpandedView.swift in Sources */,
 				4375CC512916842E00B317BD /* CountDownTimer.swift in Sources */,
+				434CD5F1297E4F2F00618330 /* AnimatingStroke.swift in Sources */,
 				434CD5ED297DBB7300618330 /* RotationAnimation.swift in Sources */,
 				4375CC472916747400B317BD /* BellAnimation.swift in Sources */,
 				434CD5E6297C72A500618330 /* SunAndMoon.swift in Sources */,
 				4375CC49291674BF00B317BD /* HamburgerToBack.swift in Sources */,
 				434CD5EF297E49B800618330 /* CirclePulse.swift in Sources */,
+				434CD5F5297E578D00618330 /* UIBezierPath+Extension.swift in Sources */,
+				434CD5F8297E57E300618330 /* ShapeView.swift in Sources */,
 				4375CC4D291678A300B317BD /* DanglingLight.swift in Sources */,
 				4375CC3B29166F3800B317BD /* ContentView.swift in Sources */,
 				434CD5EB297C7DD700618330 /* ShimmerEffect.swift in Sources */,
@@ -227,6 +250,7 @@
 				4375CC5C2916AD1900B317BD /* SmartHomeView.swift in Sources */,
 				4375CC5729168A4600B317BD /* AnimatingAlignment.swift in Sources */,
 				4375CC3929166F3800B317BD /* AnimationsApp.swift in Sources */,
+				434CD5F6297E578D00618330 /* UIColor+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
