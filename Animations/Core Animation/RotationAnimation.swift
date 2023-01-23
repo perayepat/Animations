@@ -7,6 +7,8 @@ struct RotationAnimation: View {
     @State var scaleXY = 1.0
     @State var postionX = -150
     @State var objectColor = Color.blue
+    // + Transperency
+    @State var transperency = 0.1
     
     var body: some View {
         Rectangle()
@@ -14,6 +16,7 @@ struct RotationAnimation: View {
             .frame(width: 50, height: 50)
             .rotationEffect(.degrees(rotation))
             .scaleEffect(scaleXY)
+            .opacity(transperency)
             .blur(radius: scaleXY)
             .offset(x: CGFloat(postionX))
             .animation(Animation.easeInOut(duration: 3).repeatForever(autoreverses: true).speed(4), value: rotation)
@@ -22,6 +25,7 @@ struct RotationAnimation: View {
                 scaleXY += 1.1
                 postionX += 250
                 objectColor = Color.pink
+                transperency = 1
             }
     }
 }

@@ -26,6 +26,11 @@ struct CirclePulse: View {
                 .onAppear {
                     animatingSmallCircle.toggle()
                 }
+            
+            Circle()
+                .stroke(lineWidth: 4)
+                .frame(width: UIScreen.main.bounds.width - 150, height: UIScreen.main.bounds.width - 150, alignment: .center)
+                .opacity(0.2)
         }
     }
 }
